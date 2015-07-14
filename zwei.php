@@ -38,14 +38,3 @@
 
   </body>
   </html>
-
-  <?php 
-    $dbc=mysqli_connect('localhost','root','joygame1','zwei');
-      $query1 = "SELECT click FROM zwei";
-      $result=mysqli_query($dbc,$query1);
-      $clicknum=mysqli_fetch_array($result);
-      $clicknum[0]++;
-      $query2="UPDATE zwei SET click='$clicknum[0]'";
-      $result2=mysqli_query($dbc,$query2);
-      
-  ?>
