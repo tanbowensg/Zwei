@@ -18,10 +18,10 @@ var test=new ImpactTest();
 	function createRectArray(){
 		rectArray[ani.i]=new CreateRect();
 		rectArray[ani.i].makeItSpecial();
-		alert(rectArray[ani.i].ceshi);
-		alert(rectArray[ani.i].hasOwnProperty('ceshi'));
+		// alert(rectArray[ani.i].ceshi);
+		// alert(rectArray[ani.i].hasOwnProperty('ceshi'));
 		rectArray[ani.i].ceshi='xinceshi';
-		alert(rectArray[ani.i].hasOwnProperty('x'));
+		// alert(rectArray[ani.i].hasOwnProperty('x'));
 		ani.i++;
 		if (ani.i>=5){//设定方块数量的上限
 			ani.i=0;
@@ -80,24 +80,3 @@ var test = new Bar() // 创建Bar的一个新实例
 
 alert(test.name);
 */
-
-function Person(){
-	this.hhh=function(){
-		this.name='tan';
-	}
-}
-
-Person.prototype.name='wang';
-Person.prototype.job="programmer";
-Person.prototype.sayname=function(){
-	alert(this.name);
-}
-
-var xiaowang=new Person();
-var xiaotan=new Person();
-xiaowang.sayname();
-xiaotan.sayname();
-
-xiaowang.hhh();
-xiaowang.sayname();
-xiaotan.sayname();
